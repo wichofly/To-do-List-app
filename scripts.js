@@ -29,6 +29,7 @@ function newItem(){
           }
             
    //2. Crossing out an item from the list of items:
+   
         //function crossOut() {
              //li.classList.toggle("strike");
         //}       
@@ -36,25 +37,25 @@ function newItem(){
         //li.addEventListener("dblclick",crossOut);
 
         function crossOut() {
-            li.toggleClass("strike");
+            li.toggleClass("strike");   // Is this function necessary? I receive a recomendattion to remove.
         }
     
-        li.on("dblclick", function crossOut() {
+        li.on("dblclick", function crossOut() {   // Ading event listeners "on"
             li.toggleClass("strike");
         });
 
     //3(i). Adding the delete button "X": 
+
         //let crossOutButton = document.createElement("crossOutButton");
         //crossOutButton.appendChild(document.createTextNode("X"));
         //li.appendChild(crossOutButton);
-
-        //crossOutButton.addEventListener("click", deleteListItem); // I dont get why this line is no more using jQuery.
 
         let crossOutButton = $("<crossOutButton></crossOutButton>");
         crossOutButton.append(document.createTextNode("X"));
         li.append(crossOutButton);        
 
     //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
+
        // function deleteListItem(){
             //li.classList.add("delete")
         //}
