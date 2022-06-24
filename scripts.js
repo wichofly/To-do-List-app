@@ -19,7 +19,7 @@ function newItem(){
 
        let li = $('<li></li>');
        let inputValue = $('#input').val(); // it has an ID, do not forget put it, val goes outside of the parenthsis
-       //let text = $('inputValue'); // Why this line does not exist more?
+       //let text = $('inputValue');       // Why this line does not exist more?
        li.append(inputValue);
 
         if (inputValue === '') {
