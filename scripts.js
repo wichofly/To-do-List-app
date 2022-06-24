@@ -25,7 +25,7 @@ function newItem(){
         if (inputValue === '') {
             alert("You must write something!");
           } else {
-            $('#list').append(li);
+            $('#list').append(li);  // I do not need to write a varaible
           }
             
    //2. Crossing out an item from the list of items:
@@ -57,7 +57,7 @@ function newItem(){
         li.append(crossOutButton);        
 
     //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
-    
+
        // function deleteListItem(){
             //li.classList.add("delete")
         //}
